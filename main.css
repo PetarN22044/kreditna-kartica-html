@@ -1,0 +1,75 @@
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    background-image: url(./sliki/naslovna1\ \(2\).jpg);
+    background-size: cover;
+}
+@keyframes cardAnimation{
+  from { transform: translateY(-20px);}
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 270px;
+    background: linear-gradient(45deg, black, #444, black);
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 2px black ;
+    padding: 1.5rem 2rem;
+    animation: cardAnimation 1s alternate infinite;
+
+}
+
+
+.card-top, .card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-top svg {
+    transform: rotate(90deg);
+}
+.card-title{
+    font-size: 1.8rem ;
+    z-index: 1;
+}
+.card-center{
+   z-index: 1; 
+}
+.card-center img{
+    position: relative;
+    bottom: 15px;
+    width: 80px;
+    padding-left: 2rem;
+}
+.card-bottom-left, .card-bottom-right{
+    display: flex;
+    flex-direction: column;
+}
+.card-bottom-left{
+    gap: .7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
